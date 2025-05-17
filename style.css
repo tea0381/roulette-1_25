@@ -1,0 +1,55 @@
+:root {
+  --burgundy: #800020;
+  --burgundy-dark: #5a0015;
+  --burgundy-light: #a63c50;
+}
+
+body {
+  background: linear-gradient(to bottom right, #fdf4f6, #ffffff);
+  font-family: 'Arial', sans-serif;
+}
+
+.text-burgundy {
+  color: var(--burgundy);
+}
+
+.btn-burgundy {
+  background-color: var(--burgundy);
+  color: white;
+  border-radius: 12px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-burgundy:hover {
+  background-color: var(--burgundy-dark);
+  transform: scale(1.05);
+}
+
+.roulette-box {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--burgundy);
+  background-color: #fff0f3;
+  border: 3px solid var(--burgundy);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(128, 0, 32, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.roulette-box:active {
+  transform: scale(0.97);
+}
+
+.bg-burgundy {
+  background-color: var(--burgundy) !important;
+}
+.rounded-top-4 {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
